@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  background: hwb(345 89% 5%);
+  color: rgb(72, 63, 60);
+}
+
+#name {
+  color: black;
+}
+
+table {
+  border: 1px solid gray;
+  width: 500px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  background: lightblue;
+  color: palevioletred;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+.avatar {
+  width: 250px;
+  border-radius: 15%;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+  transform-origin: left top;
+  box-shadow: 0px 0px 12px 1px rgb(231 178 192 / 100%);
+}
+
+.avatar:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  background: white;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  margin: 0;
+  outline: palevioletred;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input:hover,
+textarea:hover,
+button:hover {
+  border-color: palevioletred;
+  color: palevioletred;
+}
+
+.form-row {
+  margin-bottom: 8px;
+}
+
+.card {
+  box-shadow: 0px 0px 6px 0px rgb(231 178 192 / 40%);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.card>h3 {
+  margin-top: 0;
+}
+
+hr {
+  margin: 30px 0px;
+  opacity: 0.25;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(72, 63, 60);
+  text-shadow: 2px 0 10px #b3b1b1;
+  margin-right: 5px;
+}
+
+a:hover {
+  color: palevioletred;
+}
+
+.info {
+  display: flex;
+  margin: 20px;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin-left: 15px;
+}
+
+@media(max-width:700px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
